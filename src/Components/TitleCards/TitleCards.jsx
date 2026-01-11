@@ -3,8 +3,8 @@ import './TitleCards.css'
 import cards_data from '../../assets/cards/Cards_data'
 
 
-const TitleCards = () => {
-  const cardsRef = useRef();
+const TitleCards = ({title,category}) => {
+const cardsRef = useRef();
   
 const handleWheel = (event) => {
   event.preventDefault();
@@ -17,7 +17,7 @@ useEffect(() => {
 
   return (
     <div className='title-cards'>
-      <h2>Popular on Netflix</h2>
+      <h2>{title ? title:"Popular on Netflix"}</h2>
 
       <div className="cards-list" ref={cardsRef}>
         {cards_data.map((card,index) => {
