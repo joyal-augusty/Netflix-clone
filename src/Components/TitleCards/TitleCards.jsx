@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './TitleCards.css'
-import cards_data from '../../assets/cards/Cards_data'
-
 
 const TitleCards = ({ title, category }) => {
   
@@ -17,8 +15,6 @@ const TitleCards = ({ title, category }) => {
   }
 };
 
-
-  
 const handleWheel = (event) => {
   event.preventDefault();
   cardsRef.current.scrollLeft += event.deltaY;
@@ -42,7 +38,7 @@ const handleWheel = (event) => {
         {apiData.map((card,index) => {
           return <div className="card" key={index}>
             <img src={`https://image.tmdb.org/t/p/w500`+card.backdrop_path} alt="" />
-            <p>{card.original_title}</p>
+            <p>{card.title}</p>
           </div>
         })}
       </div>
