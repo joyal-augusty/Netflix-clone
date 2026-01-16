@@ -63,6 +63,10 @@ color: #b3b3b3;
 font-size: 13px;
 }
 
+.form-help p{
+    cursor: pointer;
+}
+
 .remember{
     display: flex;
     align-items: center;
