@@ -34,4 +34,43 @@
     text-decoration: none;
     color: #fff;
 }
+
+@media(max-width:800px){
+    .title-cards{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .title-cardsh2{
+        font-size: 20px;
+    }
+
+    .cards-listimg{
+        width: 200px;
+    }
+
+    .cards-list p{
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width:500px){
+    .title-cards{
+        margin-top:150px;
+        margin-bottom: 0;
+    }
+
+    .title-cardsh2{
+        font-size: 165px;
+    }
+
+    .cards-listimg{
+        width: 200px;
+    }
+
+    .cards-listp{
+        font-size: 10px;
+    }
+}
  
